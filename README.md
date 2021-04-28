@@ -16,11 +16,22 @@
 
 Crie uma pasta para iniciar o projeto 
 
-Uma vez dentro da pasta e iniciando seu projeto instale as dependências com o comando
+> mkdir node_scraping 
+
+Entre na pasta do projeto
+
+> cd node_scraping
+
+Inicie o projeto com o comando 
+
+> yarn init -y 
+
+
+Em seguida instale as dependências com o comando
 
 > yarn add cheerio request
 
-Dentro do arquivo index insira o código abaixo
+Dentro do arquivo da raiz do projeto " <b style="color:red;">./</b> " crio o arquivo <b>index.js</b> e insira o código abaixo
 
 ```javascript
 var request = require('request');
@@ -34,12 +45,12 @@ request(url, function (error, response, html) {
   }
 });
 ```
-Vá no seu package.json e adicione o campo para iniciar o seu projeto 
+Vá no seu package.json e adicione o campo <b style="color:#00FFFF;">"Scripts"</b> para executar o seu projeto 
 
 
 ![ package.json  : https://www.youtube.com/watch?v=00Z8i88iFsc ](assets/script.png)
 
-Execute com o comando abaixo 
+Execute seu projeto com o comando abaixo 
 
 ![ yarn command ](assets/yarn_c.png)
 
